@@ -38,6 +38,19 @@ nnoremap <C-n> :Lex<CR>       " Ctrl+n to toggle the explorer
 " Keep it simple: let it use the system default config
 let g:ycm_confirm_extra_conf = 0
 
+" Don't suggest words from comments
+let g:ycm_complete_in_comments = 0
+
+" Only start suggesting after I type 2 characters
+let g:ycm_min_num_of_chars_for_completion = 2
+
+" Don't collect every single word in the file as an identifier
+" (This stops it from suggesting random words you used in text)
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+
+" Only show a max of 10 suggestions (keeps the UI clean)
+let g:ycm_max_diagnostics_to_display = 10
+
 " 3. Airline (Status Bar)
 " Disable the 'fancy' symbols that require special fonts to avoid weird characters
 let g:airline_powerline_fonts = 1
