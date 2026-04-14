@@ -53,7 +53,7 @@ let g:ycm_max_diagnostics_to_display = 10
 
 " 3. Airline (Status Bar)
 " Disable the 'fancy' symbols that require special fonts to avoid weird characters
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline_theme = 'dark'
 
 " --- SHORTCUTS ---
